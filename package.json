@@ -1,0 +1,31 @@
+{
+  "name": "handraiser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:start": "docker-compose up -d db",
+    "db:stop": "docker-compose down",
+    "migrate": "node-pg-migrate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keanu027/handraiser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keanu027/handraiser/issues"
+  },
+  "homepage": "https://github.com/keanu027/handraiser#readme",
+  "dependencies": {
+    "argon2": "^0.24.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "massive": "^5.11.2",
+    "node-pg-migrate": "^3.21.1",
+    "pg": "^7.12.1"
+  }
+}
